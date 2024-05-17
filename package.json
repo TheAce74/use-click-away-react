@@ -1,0 +1,54 @@
+{
+  "name": "use-click-away-react",
+  "version": "1.0.0",
+  "description": "A custom React hook that triggers a callback when a user clicks outside a specified element, with optional exclusions.",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TheAce74/use-click-away-react"
+  },
+  "keywords": [
+    "react",
+    "hook",
+    "click away",
+    "click outside",
+    "typescript",
+    "use click away",
+    "use click outside"
+  ],
+  "bugs": {
+    "url": "https://github.com/TheAce74/use-click-away-react/issues"
+  },
+  "homepage": "https://theace74.github.io/use-click-away-react/",
+  "author": "TheAce74",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0",
+    "react-dom": "^16.8.0 || ^17.0.0 || ^18.0.0"
+  },
+  "dependencies": {
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0",
+    "react-dom": "^16.8.0 || ^17.0.0 || ^18.0.0",
+    "tslib": "^2.6.2"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@types/react": "^18.3.2",
+    "@types/react-dom": "^18.3.0",
+    "rollup": "^4.17.2",
+    "typescript": "^5.4.5"
+  }
+}
