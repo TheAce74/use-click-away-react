@@ -7,7 +7,7 @@ import { useEffect, useMemo, useRef } from "react";
  * @param {array} excludeClasses - The optional excludeClasses param expects an array of classNames representing elements which can be clicked and won't close the dropdowns/containers
  **/
 function useClickAway(callback: () => void, excludeClasses?: string[]) {
-  const clickAwayRef = useRef<HTMLElement | null>(null);
+  const clickAwayRef = useRef<HTMLElement>();
 
   const memoizedExcludeClasses = useMemo(
     () => excludeClasses,
