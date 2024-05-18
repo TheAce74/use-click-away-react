@@ -28,14 +28,14 @@ yarn add use-click-away-react
 
 ## Usage
 
-Import the `useClickAway` hook and use it in your functional components. Pass a callback function that will be called when a click outside the target element is detected, and optionally, an array of class names to exclude from triggering the callback.
+Import the `useClickAway` hook and use it in your functional components. Pass a callback function that will be called when a click outside the target element is detected, and optionally, an array of class names to exclude from triggering the callback. If you're using typescript, don't forget to add the appropriate type parameter for the element that's subscribing to the click-away listener
 
 ```typescript
 import React from "react";
 import { useClickAway } from "use-click-away-react";
 
 function Example() {
-  const { clickAwayRef } = useClickAway(() => {
+  const { clickAwayRef } = useClickAway<HTMLDivElement>(() => {
     alert("Clicked outside!");
   }, ["exclude-class"]);
 
@@ -66,7 +66,7 @@ export default Example;
 #### Returns
 
 - An object with a single property:
-  - `clickAwayRef: RefObject<HTMLElement | null>` - A React ref object to be assigned to the target element.
+  - `clickAwayRef: RefObject<T extends HTMLElement | null>` - A React ref object to be assigned to the target element.
 
 ## Example
 
@@ -76,7 +76,7 @@ Here's a complete example using the `useClickAway` hook:
 import { useClickAway } from "use-click-away-react";
 
 function Dropdown() {
-  const { clickAwayRef } = useClickAway(() => {
+  const { clickAwayRef } = useClickAway<HTMLDivElement>(() => {
     console.log("Dropdown closed");
   });
 
