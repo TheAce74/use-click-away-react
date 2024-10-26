@@ -1,6 +1,6 @@
 {
   "name": "use-click-away-react",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A custom React hook that triggers a callback when a user clicks outside a specified element, with optional exclusions.",
   "type": "module",
   "main": "dist/index.js",
@@ -33,12 +33,12 @@
   "author": "TheAce74",
   "license": "MIT",
   "peerDependencies": {
-    "react": "^16.8.0 || ^17.0.0 || ^18.0.0",
-    "react-dom": "^16.8.0 || ^17.0.0 || ^18.0.0"
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0",
+    "react-dom": "^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0"
   },
   "dependencies": {
-    "react": "^16.8.0 || ^17.0.0 || ^18.0.0",
-    "react-dom": "^16.8.0 || ^17.0.0 || ^18.0.0",
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0",
+    "react-dom": "^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0",
     "tslib": "^2.6.2"
   },
   "devDependencies": {
